@@ -45,7 +45,10 @@ app.component("FontIcon", FontIcon);
 import { Auth } from "@/components/ReAuth";
 app.component("Auth", Auth);
 
-getServerConfig(app).then(async config => {
+setConfig(app);
+
+async function setConfig(app) {
+  const config = await getServerConfig(app);
   app.use(router);
   await router.isReady();
   injectResponsiveStorage(app, config);
@@ -58,4 +61,4 @@ getServerConfig(app).then(async config => {
     .use(PureDescriptions)
     .use(useEcharts);
   app.mount("#app");
-});
+}

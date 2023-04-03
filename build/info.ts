@@ -21,8 +21,8 @@ export function viteBuildInfo(): Plugin {
         bold(
           green(
             `👏欢迎使用${blue(
-              "[vue-pure-admin]"
-            )}，如果您感觉不错，记得点击后面链接给个star哦💖 https://github.com/pure-admin/vue-pure-admin`
+              "[onlyy-admin]"
+            )}，如果您觉得可行，可以点击后面链接给个star哦💖 https://github.com/loveyy520/onlyy-admin`
           )
         )
       );
@@ -39,7 +39,7 @@ export function viteBuildInfo(): Plugin {
             console.log(
               bold(
                 green(
-                  `🎉恭喜打包完成（总用时${dayjs
+                  `🎉打包完成啦！（总用时${dayjs
                     .duration(endTime.diff(startTime))
                     .format("mm分ss秒")}，打包后的大小为${size}）`
                 )

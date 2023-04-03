@@ -35,7 +35,7 @@ setOptions(
     legend: {
       //@ts-expect-error
       right: true,
-      data: ["watchers", "fork", "star"]
+      data: ["摸鱼", "摆烂", "摆烂失败"]
     },
     xAxis: [
       {
@@ -60,7 +60,7 @@ setOptions(
     ],
     series: [
       {
-        name: "watchers",
+        name: "摆烂",
         type: "bar",
         barWidth: "15%",
         itemStyle: {
@@ -78,7 +78,7 @@ setOptions(
         data: [200, 320, 800]
       },
       {
-        name: "fork",
+        name: "摸鱼",
         type: "bar",
         barWidth: "15%",
         itemStyle: {
@@ -96,7 +96,7 @@ setOptions(
         data: [1600, 2460, 4500]
       },
       {
-        name: "star",
+        name: "摆烂失败",
         type: "bar",
         barWidth: "15%",
         itemStyle: {

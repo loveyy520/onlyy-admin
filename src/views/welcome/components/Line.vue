@@ -44,7 +44,7 @@ setOptions(
     legend: {
       //@ts-expect-error
       right: true,
-      data: ["fork", "star"]
+      data: ["我的收入(分)", "贫困地区人均收入(元)"]
     },
     calculable: true,
     xAxis: [
@@ -83,11 +83,11 @@ setOptions(
     ],
     series: [
       {
-        name: "fork",
+        name: "我的收入(分)",
         type: "line",
         symbolSize: 10,
         symbol: "circle",
-        color: "#f56c6c",
+        color: "#64d8a3",
         markPoint: {
           label: {
             color: "#fff"
@@ -110,11 +110,11 @@ setOptions(
         ]
       },
       {
-        name: "star",
+        name: "贫困地区人均收入(元)",
         type: "line",
         symbolSize: 10,
         symbol: "circle",
-        color: "#53a7ff",
+        color: "#ff9d4d",
         markPoint: {
           label: {
             color: "#fff"

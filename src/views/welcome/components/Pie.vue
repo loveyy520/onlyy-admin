@@ -31,17 +31,35 @@ setOptions(
     },
     series: [
       {
-        name: "Github信息",
+        name: "工作时长信息",
         type: "pie",
         top: "20%",
-        radius: "80%",
+        radius: ["60%", "80%"],
         center: ["40%", "50%"],
-        color: ["#e6a23c", "#f56c6c", "#53a7ff"],
+        color: [
+          "#64d8a3",
+          "#ff9d4d",
+          // "#5C9DF8",
+          // "#f9d372",
+          // "#ec7471",
+          // "#73c0de",
+          "#F9D372",
+          "#EC7471",
+          "#fc8452",
+          "#9a60b4",
+          "#ea7ccc"
+        ],
         data: [
-          { value: 400, name: "watchers" },
-          { value: 1600, name: "forks" },
-          { value: 7200, name: "star" }
-        ]
+          { value: 400, name: "通勤时长" },
+          { value: 1600, name: "下班时长" },
+          { value: 7200, name: "上班/加班时长" }
+        ],
+        label: {
+          show: false
+        },
+        itemStyle: {
+          borderColor: "#fff"
+        }
         // emphasis: {
         //   itemStyle: {
         //     shadowBlur: 10,

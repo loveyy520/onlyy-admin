@@ -16,7 +16,7 @@ import { loginRules } from "./utils/rule";
 import phone from "./components/phone.vue";
 import TypeIt from "@/components/ReTypeit";
 import qrCode from "./components/qrCode.vue";
-import regist from "./components/regist.vue";
+import register from "./components/register.vue";
 import update from "./components/update.vue";
 import { initRouter } from "@/router/utils";
 import { useNav } from "@/layout/hooks/useNav";
@@ -97,6 +97,10 @@ function onkeypress({ code }: KeyboardEvent) {
 
 onMounted(() => {
   window.document.addEventListener("keypress", onkeypress);
+  window.TweenMax.from(".ball", 3, {
+    bottom: 0,
+    ease: Bounce.easeOut
+  });
 });
 
 onBeforeUnmount(() => {
@@ -159,7 +163,7 @@ watch(imgCode, value => {
       </div>
       <div class="login-box">
         <div class="login-form">
-          <avatar class="avatar" />
+          <avatar class="avatar ball" />
           <Motion>
             <h2 class="outline-none">
               <TypeIt :values="[title]" :cursor="false" :speed="150" />
@@ -288,7 +292,7 @@ watch(imgCode, value => {
           <!-- 二维码登录 -->
           <qrCode v-if="currentPage === 2" />
           <!-- 注册 -->
-          <regist v-if="currentPage === 3" />
+          <register v-if="currentPage === 3" />
           <!-- 忘记密码 -->
           <update v-if="currentPage === 4" />
         </div>
@@ -319,6 +323,10 @@ watch(imgCode, value => {
   .check-en {
     position: absolute;
     left: 20px;
+  }
+
+  .ball {
+    position: relative;
   }
 }
 </style>

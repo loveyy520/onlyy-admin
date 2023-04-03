@@ -117,7 +117,7 @@ const {
                 <el-button
                   class="reset-margin"
                   link
-                  type="primary"
+                  type="danger"
                   :size="size"
                   :icon="useRenderIcon(Delete)"
                   @click="handleDelete(row)"

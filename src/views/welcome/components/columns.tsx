@@ -8,11 +8,11 @@ import User from "@iconify-icons/ri/user-3-fill";
 
 export function useColumns() {
   const lists = [
-    { type: "", label: "善良" },
-    { type: "success", label: "好学" },
-    { type: "info", label: "幽默" },
+    { type: "", label: "摸鱼" },
+    { type: "success", label: "摆烂" },
+    { type: "info", label: "不学无术" },
     { type: "danger", label: "旅游" },
-    { type: "warning", label: "追剧" }
+    { type: "warning", label: "阅读" }
   ];
 
   const columnsA = [
@@ -25,7 +25,7 @@ export function useColumns() {
           用户名
         </div>
       ),
-      value: "乐于分享的程序员小铭"
+      value: "不学无术的Chris"
     },
     {
       labelRenderer: () => (
@@ -36,7 +36,7 @@ export function useColumns() {
           手机号
         </div>
       ),
-      value: "123456789"
+      value: "176****2803"
     },
     {
       labelRenderer: () => (
@@ -62,10 +62,15 @@ export function useColumns() {
         </div>
       ),
       cellRenderer: () => {
-        return lists.map(v => {
+        return lists.map(tag => {
           return (
-            <el-tag class="mr-[10px]" type={v.type} size="small" effect="dark">
-              {v.label}
+            <el-tag
+              class="mr-[10px]"
+              type={tag.type}
+              size="small"
+              effect="dark"
+            >
+              {tag.label}
             </el-tag>
           );
         });
@@ -80,7 +85,7 @@ export function useColumns() {
           联系地址
         </div>
       ),
-      value: "中华人民共和国"
+      value: "永恒大陆-绚丽之门"
     }
   ];
 
@@ -97,7 +102,7 @@ export function useColumns() {
       cellRenderer: () => (
         <TypeIt
           className={"github"}
-          values={["办法总比困难多"]}
+          values={["代码太累了，不如玩游戏！"]}
           cursor={false}
           speed={100}
         />

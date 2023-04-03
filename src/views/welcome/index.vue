@@ -69,12 +69,12 @@ axios
           <template #header>
             <a
               :class="titleClass"
-              href="https://github.com/pure-admin/vue-pure-admin/releases"
+              href="https://github.com/loveyy520/onlyy-admin"
               target="_black"
             >
               <TypeIt
                 :className="'type-it2'"
-                :values="['PureAdmin 版本日志']"
+                :values="['OnlyyAdmin 版本日志']"
                 :cursor="false"
                 :speed="80"
               />
@@ -129,7 +129,7 @@ axios
             >
               <TypeIt
                 :className="'type-it1'"
-                :values="['GitHub信息']"
+                :values="['部署信息']"
                 :cursor="false"
                 :speed="120"
               />
@@ -167,12 +167,12 @@ axios
           <template #header>
             <a
               :class="titleClass"
-              href="https://github.com/pure-admin/vue-pure-admin"
+              href="https://github.com/loveyy520/onlyy-admin"
               target="_black"
             >
               <TypeIt
                 :className="'type-it4'"
-                :values="['GitHub折线图信息']"
+                :values="['收入(分)折线图信息']"
                 :cursor="false"
                 :speed="120"
               />
@@ -210,12 +210,12 @@ axios
           <template #header>
             <a
               :class="titleClass"
-              href="https://github.com/pure-admin/vue-pure-admin"
+              href="https://github.com/loveyy520/onlyy-admin"
               target="_black"
             >
               <TypeIt
                 :className="'type-it3'"
-                :values="['GitHub饼图信息']"
+                :values="['工作时长信息']"
                 :cursor="false"
                 :speed="120"
               />
@@ -253,12 +253,12 @@ axios
           <template #header>
             <a
               :class="titleClass"
-              href="https://github.com/pure-admin/vue-pure-admin"
+              href="https://github.com/loveyy520/onlyy-admin"
               target="_black"
             >
               <TypeIt
                 :className="'type-it5'"
-                :values="['GitHub柱状图信息']"
+                :values="['摆烂(次)柱状图信息']"
                 :cursor="false"
                 :speed="120"
               />
