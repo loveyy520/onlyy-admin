@@ -10,6 +10,7 @@ import { ref, computed, markRaw } from "vue";
 import Github from "./components/Github.vue";
 import { randomColor } from "@pureadmin/utils";
 import { useRenderFlicker } from "@/components/ReFlicker";
+import { Markdown } from "@/components/CherryMarkdown";
 
 defineOptions({
   name: "Welcome"
@@ -272,6 +273,7 @@ axios
         </el-card>
       </el-col>
     </el-row>
+    <markdown />
   </div>
 </template>
 
