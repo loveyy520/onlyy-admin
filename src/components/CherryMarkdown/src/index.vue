@@ -6,6 +6,7 @@
 import { onMounted } from "vue";
 import Cherry from "cherry-markdown/dist/cherry-markdown.core";
 import options from "./options";
+import "cherry-markdown/dist/cherry-markdown.min.css";
 
 const registerPlugin = async () => {
   const [{ default: CherryMermaidPlugin }, mermaid] = await Promise.all([
@@ -28,13 +29,19 @@ onMounted(() => {
     new Cherry({
       id: "markdown-container",
       value: `
-      # welcome to cherry editor!
-      ### 1.第一个示例
-      这是一段 **\`js\`**代码
-\`\`\`javascript
-      const name = 'cc'
-      console.log(name)
-\`\`\`
+# 例子
+> [Github 地址](https://github.com/Tencent/cherry-markdown){target=_blank}
+
++ [basic](index.html){target=_blank}
+- [H5](h5.html){target=_blank}
+- [多实例](multiple.html){target=_blank}
+- [无 toolbar](notoolbar.html){target=_blank}
+- [纯预览模式](preview_only.html){target=_blank}
+- [注入](xss.html){target=_blank}
+- [API](api.html){target=_blank}
+- [图片所见即所得编辑尺寸](img.html){target=_blank}
+- [表格所见即所得编辑尺寸](table.html){target=_blank}
+- [标题自动序号](head_num.html){target=_blank}
       `,
       ...options
     });
@@ -42,4 +49,9 @@ onMounted(() => {
 });
 </script>
 
-<style></style>
+<style>
+#markdown-container {
+  width: 100%;
+  height: 50vh;
+}
+</style>

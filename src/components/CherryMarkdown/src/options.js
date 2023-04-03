@@ -143,7 +143,7 @@ export default {
   },
   // toolbar configuration
   toolbars: {
-    theme: "dark", // light or dark
+    theme: "light", // light or dark
     showToolbar: true, // False: the top toolbar is not displayed; True: display toolbar; toolbars. Showtoolbar = false and toolbars Toolbar = false equivalent
     toolbar: [
       "bold",
